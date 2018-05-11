@@ -44,14 +44,14 @@ if(isset($_POST["submitted"])){
 			//Set this to true if SMTP host requires authentication
 			$mail->SMTPAuth = true;
 			//Provide username and password
-			$mail->Username = "f7a087e35316678b3cf2fc9aec1d8559";
-			$mail->Password = "4342c272e7dbe3a4ca4351355452141d";
+			$mail->Username = "-";
+			$mail->Password = "-";
 			//If SMTP requires TLS encryption then set it
 			$mail->SMTPSecure = "tls";
 			//Set TCP port to connect to
 			$mail->Port = 587;
 			//$mail->Port = 25;
-			$mail->From = "cheewei001@gmail.com";
+			$mail->From = "abc@gmail.com";
 			$mail->FromName = "cheewei";
 			$mail->addAddress($email, "cheewei");
 			$mail->isHTML(TRUE);
